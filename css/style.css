@@ -212,7 +212,6 @@ letter-spacing: normal;
 .landing-page{
     display: flex;
     background-image:  linear-gradient(rgba(0, 0, 0, 0.55), rgba(0,0,0,0.55)), url('images/home-bg.jpg');
-   
     height: 90vh;
     width: 100%;
     background-position: center;
