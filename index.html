@@ -29,8 +29,8 @@
         <ul class="menu">
             <li class="logo"><a href="#"><img src="images/Decoir-2.png" alt="Decoir"> </a></li>
             <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About</a></li>
-            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Catalogue</a></li>
+            <li class="item"><a href="#">Contact</a></li>
             <!-- </li> -->
             <li class="item nav-icon "><a href="#"><span class="material-icons-outlined">
                         <img src="https://img.icons8.com/material-outlined/24/006d6d/shopping-cart--v1.png" />
@@ -39,6 +39,212 @@
             <li class="toggle"><span class="bars"></span></li>
         </ul>
     </nav>
-    
+    <div class="landing-page">
+        <div class="heading-button">
+            <div class="heading">
+                <h1>The Home should be the Treasure Chest of Living</h1>
+                <p>Pick what you like because living with trend that is not you is never a good choice</p>
+            </div>
+            <div class="head-btn">
+                <button class="btn"><a href="#catalogue">Shop Now</a> </button>
+            </div>
+        </div>
+    </div>
+    <div class="catalogue">
+        <div class="header">
+            <h1>Our Products</h1>
+        </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('tables')"> Table</button>
+            <button class="btn" onclick="filterSelection('chairs')"> Chair</button>
+            <button class="btn" onclick="filterSelection('sofas')"> Sofa</button>
+            <button class="btn" onclick="filterSelection('beds')"> Bed</button>
+        </div>
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container">
+            <div class="filterDiv adjust tables card-box">
+                    <div class="card-image">
+                        <img src="images/1t.jpg" alt="table" >
+                    </div>
+                        <h4>Table Name</h4>
+                        <p>Rs.4800.00</p>
+                    <div class="card-button">
+                       <button class="btn-1">Add to Cart </button>
+                    </div>
+            </div>
+             <div class="filterDiv adjust chairs card-box">
+                <div class="card-image">
+                    <img src="images/1c.jpg" alt="table" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust tables card-box">
+                <div class="card-image">
+                    <img src="images/3t.jpg" alt="table" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust chairs card-box">
+                <div class="card-image">
+                    <img src="images/3t.jpg" alt="table" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust tables card-box">
+                <div class="card-image">
+                    <img src="images/2t.jpg" alt="table" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.5000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust beds card-box">
+                <div class="card-image">
+                    <img src="images/4t.jpg" alt="" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust sofa card-box">
+                <div class="card-image">
+                    <img src="images/4t.jpg" alt="" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust sofa card-box">
+                <div class="card-image">
+                    <img src="images/1.jpg" alt="sofa" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust sofa card-box">
+                <div class="card-image">
+                    <img src="images/1b.jpg" alt="table" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust tables card-box">
+                <div class="card-image">
+                    <img src="images/4t.jpg" alt="" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust sofa card-box">
+                <div class="card-image">
+                    <img src="images/1c.jpg" alt="" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust beds card-box">
+                <div class="card-image">
+                    <img src="images/4b.jpg" alt="" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div>
+            <div class="filterDiv adjust beds card-box">
+                <div class="card-image">
+                    <img src="images/4c.jpg" alt="" >
+                </div>
+                    <h4>Table Name</h4>
+                    <p>Rs.6000.00</p>
+                <div class="card-button">
+                   <button class="btn-1">Add to Cart </button>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="contact-section" id="contact">
+        <div class="contact-info">
+            <h2>Let's Connect</h2>
+        </div>
+        <div class="container-section">
+            <div class="info">
+                <div class="box">
+                    <div class="contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="contact-text">
+                        <!-- <h3>Address</h3> -->
+                        <p>25/12, P.G.M Shah Road, Kolkata : 700095</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="contact-text">
+                        <!-- <h3>Email</h3> -->
+                        <p>customercare@decoir.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="contact-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="contact-text">
+                        <!-- <h3>Phone</h3> -->
+                        <p> 180022 34962</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Get in touch">
+                    </div>
+                </form>
+            </div>
+        </div>      
+    </div>
+     <script src="js/box.js"></script>    
 </body>
 </html>
