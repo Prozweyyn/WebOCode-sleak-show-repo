@@ -279,8 +279,6 @@ letter-spacing: normal;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background: url('../images/contact-1-bg.jpeg');
     background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('../images/contact-1-bg.jpeg');
  
     z-index: -1;
