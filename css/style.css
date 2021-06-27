@@ -15,6 +15,9 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
+body{
+  z-index: -1;
+}
 nav {
   padding: 5px 10px;
   height: 85px;
@@ -225,8 +228,7 @@ letter-spacing: normal;
 
 }
 .heading-button{
-    /* border: 2px solid white; */
-    padding: 40px;
+    padding: 30px;
     width: 55%;
     height: 350px;
     height: auto;
@@ -234,9 +236,7 @@ letter-spacing: normal;
     margin-left: 40px;
 }
 .heading{
-    /* border: 2px solid green; */
     width: 100%;
-  
     font-size: 20px;
     line-height: 1.3;
     color: #fff;
@@ -250,7 +250,6 @@ letter-spacing: normal;
     line-height: 1.5;
 }
 .head-btn{
-    /* border: 2px solid red; */
     cursor: pointer;
     
 }
@@ -281,7 +280,7 @@ letter-spacing: normal;
     align-items: center;
     background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('../images/contact-1-bg.jpeg');
  
-    z-index: -1;
+    z-index: -2;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
