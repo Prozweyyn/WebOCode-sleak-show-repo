@@ -1,5 +1,3 @@
-/* #03989e */
-/* Basic styling */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,217 +13,95 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-body{
-  z-index: -1;
-}
-nav {
-  padding: 5px 10px;
-  height: 85px;
+.max-auto {
+	max-width: 94%;
+	margin: auto;
 }
 
-ul {
-  list-style-type: none;
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
-a{
-  color: teal;
-  text-decoration: none;
+
+#navbar1 {
+	overflow: hidden;
+	z-index: 2;
+	transition: 0.5s;
 }
-a:hover {
- color: #ff8714;
- transition: 0.3s;
-}
-.navbar{
+
+.navbar {
+	display: flex;
+	background-color: rgb(19,18,23);
   background-color: #fff;
+	height: 80px;
+	justify-content: space-between;
+	align-items: center;
 }
-.menu{
-  height: 70px;
+
+.nav-left {
+	width: 50%;
+	color: white;
 }
-.menu li {
-  font-size: 19px;
-  padding: 5px;
-  font-weight: 600;
-  letter-spacing: 0.6px;
+
+.nav-left h3 {
+	margin-left: 10px;
+	font-size: 25px;
 }
-.logo img{
-  height: 65px;
-  width: 70px;
-  margin: 5;
+
+.logo {
+	height: 90px;
+	width: 90px;
+	margin-top: 6px;
+	margin-left: 15px;
 }
-.logo a,.toggle a {
-  font-size: 20px;
+
+.nav-right {
+	width: 40%;
 }
-.button.secondary {
-  border-bottom: 1px #444 solid;
+
+.nav-right ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+
 }
-.material-icons{
-  color: #006d6d;
-  font-family: 'Material Icons';
-font-weight: normal;
-font-style: normal;
-font-size: 24px;  /* Preferred icon size */
-display: inline-block;
-line-height: 1;
-text-transform: none;
-letter-spacing: normal;
+
+.nav-right li {
+	display: flex;
+	margin: 18px 35px;
+	padding: 8px;
+	font-size: 20px;
+  font-weight: bold;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: teal;
   
 }
 
-/* Mobile menu */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: wheat; */
-}
-.toggle {
-  order: 1;
+.nav-right a:hover {
+	color: #ff8714;
+	transition: 0.3s;
 }
 
-.item.button {
-  order: 2;
-}
-.item {
-  width: 100%;
-  text-align: center;
-  order: 3;
-  display: none;
-}
-.item.active {
-  display: block;
-}
-
-/* Navbar Toggle */
-.toggle {
-  cursor:pointer;
-}
-.bars {
-  background: #999;
-  background: teal;
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-.bars:before,
-.bars:after {
-  background: #999;
-  background: teal;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-.bars:before {
-  top: 5px;
-}
-.bars:after {
-  top: -5px;
-}
-
-/* Tablet menu */
-@media all and (min-width: 468px) {
-  .menu {
-      justify-content: center;
-  }
-  
-  .logo {
-      flex: 1;
-  }
-
-  .item.button {
-      width: auto;
-      order: 1;
-      display: block;
-  }
-  .toggle {
-      order: 2;
-  }
-  .button.secondary {
-      border: 0;
-  }
-  .button a {
-      padding: 7.5px 15px;
-      background: teal;
-      border: 1px #006d6d solid;
-      border-radius:50em;
-  }
-  .button.secondary a {
-      background: transparent;    
-  }
-  .button a:hover {
-      text-decoration: none;
-      transition:all .25s;
-  }
-  .button:not(.secondary) a:hover {
-      background: #006d6d;
-      border-color: #005959;
-  }
-  .button.secondary a:hover {
-      color: #ddd;
-  } 
-}
-
-/* Desktop menu */
-@media all and (min-width: 768px) {
-  .item {
-      display: block;
-      width: auto;
-  }
-  .toggle {
-      display: none;
-  }
-  .logo {
-      order: 0;
-  }
-  .item {
-      order: 1;
-  }
-  .button {
-      order: 2;
-  }
-  .nav-icon{
-    order: 1;
-  }
-  .menu li {
-      padding: 10px 5px;
-      margin: 0px 20px;
-  }
-  .logo img{
-      padding: 5px;
-      margin: 0 5px;
-      
-      /* background-color: yellow; */
-  }
-  .logo{
-      /* background-color: #999; */
-      height: 80px;
-      margin-top: 0;
-      padding: 5px;
-  }
-  .menu li.button {
-      padding-right: 0;
-  }
-}
 
 /*landing page*/
 .landing-page{
     display: flex;
     background-image:  linear-gradient(rgba(0, 0, 0, 0.55), rgba(0,0,0,0.55)), url('../images/home-bg.jpeg');
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    position: relative;
-    
-    z-index: -1; 
-    justify-content: center;
-    align-items:flex-start;
-
+    background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-position: center center;
+	  background-size: cover;
+	  box-sizing: border-box;
+  	background-color: #000;
+  	position: relative;
 }
 .heading-button{
     padding: 30px;
@@ -234,13 +110,13 @@ letter-spacing: normal;
     height: auto;
     margin: auto;
     margin-left: 40px;
+    margin-top: 170px;
 }
 .heading{
     width: 100%;
     font-size: 20px;
     line-height: 1.3;
     color: #fff;
-    /* font-family: var(--font1) ; */
 }
 .heading h1{
     margin:  18px 0;

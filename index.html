@@ -12,33 +12,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $(".toggle").on("click", function () {
-                if ($(".item").hasClass("active")) {
-                    $(".item").removeClass("active");
-                } else {
-                    $(".item").addClass("active");
-                }
-            });
-        });
-    </script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="menu">
-            <li class="logo"><a href="#home"><img src="images/Decoir-2.png" alt="Decoir"> </a></li>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#catalogue">Catalogue</a></li>
-            <li class="item"><a href="#contact">Contact</a></li>
-            <!-- </li> -->
-            <li class="item nav-icon "><a href="#"><span class="material-icons-outlined">
-                        <img src="https://img.icons8.com/material-outlined/24/006d6d/shopping-cart--v1.png" />
-                    </span></a></li>
-            <li class="item button secondary"><a href="#">Sign Up</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
+
+
+    <nav class="navbar sticky navbar-fixed-top.scrolled " id="navbar1">
+        <div class="nav-left">
+            <a href="#home"><img src="images/Logo.png" alt="Decoir" class="logo"></a>
+            
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li class=".font-style" ><a href="#home">Home</a></li>
+                <li class=".font-style" ><a href="#catalogue">Catalogue</a></li>
+                <li class=".font-style" ><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+
     <div class="landing-page" id="home">
         <div class="heading-button">
             <div class="heading">
@@ -436,6 +427,7 @@
             <p>Copyright &copy; 2021 Decoir.com All rights reserved.</p>
         </div>
     </footer>
+    <script src="js/navbar.js"></script>
      <script src="js/index.js"></script>
 </body>
 </html>
