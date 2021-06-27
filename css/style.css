@@ -384,7 +384,7 @@ a {
 	height: 64px;
 	font-size: 18px;
 	color: #fff;
-	background: #e91e63;
+	background: teal;
 	padding: 10px 15px;
 	line-height: 30px;
 	border: 2px solid transparent;
@@ -394,8 +394,8 @@ a {
 }
 
 .newsletter-box input[type="submit"]:hover {
-	background: #e71158;
-	font-size: 16px;
+	background: #ff8714;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1023px) {
