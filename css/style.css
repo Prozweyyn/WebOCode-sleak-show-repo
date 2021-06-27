@@ -28,8 +28,8 @@ a{
   text-decoration: none;
 }
 a:hover {
-  /* text-decoration: underline; */
- color: #0f6c7a;
+ color: #ff8714;
+ transition: 0.3s;
 }
 .navbar{
   background-color: #fff;
@@ -40,8 +40,8 @@ a:hover {
 .menu li {
   font-size: 19px;
   padding: 5px;
-  /* white-space: nowrap; */
-  /* border: 2px solid red; */
+  font-weight: 600;
+  letter-spacing: 0.6px;
 }
 .logo img{
   height: 65px;
